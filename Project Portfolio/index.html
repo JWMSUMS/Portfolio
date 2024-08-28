@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <title>John Summers - Developer</title>
+    </head>
+    
+    <body>
+     <div class="sidebar">
+        <div class="top">
+            <div class="logo">
+                <i class="bx bxl-codepen"></i>
+                <span>John Summers</span>
+            </div>
+            <i class="bx bx-menu" id="btn"></i>
+        </div>
+        <div class="user">
+            <img src="sp1.webp" alt="spidey" class="user-img">
+            <div>
+                <p class="bodl">John S.</p>
+                <p>Admin</p>
+            </div>
+        </div>
+        
+         <ul>
+            <li>
+                <a href="#">
+                    <i class="bx bx-home-alt"></i>
+                    <span class="nav-item">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bxs-book-reader"></i>
+                    <span class="nav-item">Resume</span>
+                </a>
+                <span class="tooltip">Resume</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bxs-id-card"></i>
+                    <span class="nav-item">About</span>
+                </a>
+                <span class="tooltip">About</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bxs-hard-hat"></i>
+                    <span class="nav-item">Projects</span>
+                </a>
+                <span class="tooltip">Projects</span>
+            </li>
+         </ul>
+     
+   </div>
+
+   <div class="main-content">
+    <div class="container">
+        <section>
+        <h1>John Summers</h1>
+        <h1>Dev and IT</h1>
+    </section>
+    
+    </div>
+    <div class="about">
+    <section>
+        
+            <h1>About</h1>
+        </section>
+        </div>
+    
+   </div>  
+
+    </body>
+    <script>
+        let btn = document.querySelector('#btn');
+        let sidebar = document.querySelector('.sidebar');
+
+       btn.onclick = function () {
+        sidebar.classList.toggle('active')
+       };
+
+        btn.onmouseenter = function() {
+    btn.style.cursor = 'pointer';
+};
+
+btn.onmouseleave = function() {
+    btn.style.cursor = '';
+}; 
+       
+
+
+    </script>
+</html>
